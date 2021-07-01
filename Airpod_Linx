@@ -1,0 +1,32 @@
+# For me i am on the Ubuntu
+
+# For me i use bluetooth dongle, after get the dongle download the driver and install
+
+#or install blutoothman
+sudo apt install blueman
+
+
+
+
+
+#If the sound is tpp small
+sudo systemctl edit --full bluetooth.service
+
+# and edit this line ExecStart=/usr/lib/bluetooth/bluetoothd as
+ExecStart=/usr/lib/bluetooth/bluetoothd --noplugin=avrcp
+
+# Restart the bluetooth or computer
+
+
+
+
+
+
+# If you cannot use as headphone after connect the airpod -> Install the output manager
+sudo apt-get install pavucontrol
+
+#and change the output source as your headphone name
+
+
+
+
